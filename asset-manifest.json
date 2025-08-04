@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Goose-Rev/static/css/main.37db2764.css",
+    "main.css": "/Goose-Rev/static/css/main.5ff80731.css",
     "main.js": "/Goose-Rev/static/js/main.62211d89.js",
     "static/js/453.f35b1f7b.chunk.js": "/Goose-Rev/static/js/453.f35b1f7b.chunk.js",
     "index.html": "/Goose-Rev/index.html",
-    "main.37db2764.css.map": "/Goose-Rev/static/css/main.37db2764.css.map",
+    "main.5ff80731.css.map": "/Goose-Rev/static/css/main.5ff80731.css.map",
     "main.62211d89.js.map": "/Goose-Rev/static/js/main.62211d89.js.map",
     "453.f35b1f7b.chunk.js.map": "/Goose-Rev/static/js/453.f35b1f7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37db2764.css",
+    "static/css/main.5ff80731.css",
     "static/js/main.62211d89.js"
   ]
 }
