@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Goose-Rev/static/css/main.8c35615e.css",
+    "main.js": "/Goose-Rev/static/js/main.4dea9d92.js",
+    "static/js/453.f35b1f7b.chunk.js": "/Goose-Rev/static/js/453.f35b1f7b.chunk.js",
+    "index.html": "/Goose-Rev/index.html",
+    "main.8c35615e.css.map": "/Goose-Rev/static/css/main.8c35615e.css.map",
+    "main.4dea9d92.js.map": "/Goose-Rev/static/js/main.4dea9d92.js.map",
+    "453.f35b1f7b.chunk.js.map": "/Goose-Rev/static/js/453.f35b1f7b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c35615e.css",
+    "static/js/main.4dea9d92.js"
+  ]
+}
