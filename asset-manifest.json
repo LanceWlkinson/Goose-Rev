@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Goose-Rev/static/css/main.fc815656.css",
-    "main.js": "/Goose-Rev/static/js/main.c51a334b.js",
+    "main.js": "/Goose-Rev/static/js/main.4f61c145.js",
     "static/js/453.f35b1f7b.chunk.js": "/Goose-Rev/static/js/453.f35b1f7b.chunk.js",
     "static/media/Goose & Rev Academy Logo.jpg": "/Goose-Rev/static/media/Goose & Rev Academy Logo.2eafbb660a342dd1904b.jpg",
     "index.html": "/Goose-Rev/index.html",
     "main.fc815656.css.map": "/Goose-Rev/static/css/main.fc815656.css.map",
-    "main.c51a334b.js.map": "/Goose-Rev/static/js/main.c51a334b.js.map",
+    "main.4f61c145.js.map": "/Goose-Rev/static/js/main.4f61c145.js.map",
     "453.f35b1f7b.chunk.js.map": "/Goose-Rev/static/js/453.f35b1f7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc815656.css",
-    "static/js/main.c51a334b.js"
+    "static/js/main.4f61c145.js"
   ]
 }
