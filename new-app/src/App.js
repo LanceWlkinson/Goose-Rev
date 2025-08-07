@@ -22,7 +22,7 @@ function App() {
         <header className="App-header">
           <nav className="nav-container">
             <div className="nav-logo">
-                <NavLink to="Goose-Rev/">
+                <NavLink to="Goose-Rev/" end>
                     <img src={logo} alt="Goose & Rev Academy Logo" />
                 </NavLink>
             </div>
