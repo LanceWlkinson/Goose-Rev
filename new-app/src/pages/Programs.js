@@ -3,29 +3,45 @@ import React from 'react';
 function Programs() {
   const programs = [
     {
-      title: "Infant Care",
-      age: "6 weeks - 18 months",
-      description: "Nurturing care in a safe, stimulating environment focused on early development milestones.",
-      features: ["Individual care routines", "Sensory activities", "Early language development", "Motor skill development"]
+      title: "Infant Program",
+      age: "Ages: 6 weeks - 18 months",
+      description: "A nurturing, responsive environment where your baby can explore, grow, and reach early milestones with personalized support.",
+      features: [
+        "Individualized daily routines",
+        "Sensory-rich experiences",
+        "Early communication and bonding",
+        "Gentle motor skill development"
+      ]
     },
     {
       title: "Toddler Program",
-      age: "18 months - 3 years",
-      description: "Active learning through play, fostering independence and social skills.",
-      features: ["Potty training support", "Language development", "Social interaction", "Creative activities"]
+      age: "Ages: 18 months - 3 years",
+      description: "An active, play-focused setting designed to support growing independence, social skills, and expressive language.",
+      features: [
+        "Potty learning support",
+        "Language and vocabulary expansion",
+        "Group play and social-emotional learning",
+        "Music, movement, and hands-on activities"
+      ]
     },
     {
-      title: "Preschool",
-      age: "3 - 6 years",
-      description: "Comprehensive early education preparing children for success in school and beyond.",
-      features: ["Pre-reading skills", "Basic math concepts", "Science exploration", "Art and music"]
+      title: "Preschool Program",
+      age: "Ages: 3 - 6 years",
+      description: "A dynamic early education experience preparing children for kindergarten and beyond through exploration and purposeful play.",
+      features: [
+        "Pre-literacy and early math skills",
+        "Science discovery and inquiry",
+        "Artistic expression and music",
+        "Confidence-building routines and group projects"
+      ]
     }
   ];
 
   return (
     <div className="programs">
       <section className="programs-intro">
-        <p>Discover our comprehensive, age-appropriate programs carefully designed to nurture your child's unique developmental journey. Each program combines play-based learning with structured activities to create an engaging and enriching experience.</p>
+        <h1>Programs That Grow With Your Child</h1>
+        <p>Discover our thoughtfully designed, age-appropriate programs that support each stage of your child's development. At Goose & Rev, we blend play-based learning with meaningful structure to nurture curiosity, build confidence, and empower every child's unique journey.</p>
       </section>
 
       <div className="programs-grid">
@@ -45,7 +61,32 @@ function Programs() {
 
       <section className="curriculum">
         <h2>Our Curriculum</h2>
-        <p>Our research-backed, play-based curriculum is designed to foster creativity, critical thinking, and social-emotional development. Through hands-on activities and guided exploration, we create an environment where children develop a lifelong love of learning while building essential skills for future academic success.</p>
+        <div className="curriculum-content">
+          <div className="curriculum-intro">
+            <p>At Goose & Rev, learning is anything but ordinary. Our research-backed, play-based curriculum is thoughtfully crafted to spark curiosity, inspire creativity, and nurture the whole child.</p>
+          </div>
+
+          <div className="curriculum-pillars">
+            <div className="curriculum-pillar">
+              <h3>Child-Led Learning</h3>
+              <p>We believe that children learn best when they're actively engaged - which is why our approach is hands-on, child-led, and developmentally appropriate. Each day is filled with opportunities to explore, experiment, and connect through meaningful play.</p>
+            </div>
+
+            <div className="curriculum-pillar">
+              <h3>Kindergarten Ready</h3>
+              <p>Our programs are aligned with kindergarten readiness standards, helping children build essential skills in early literacy, math, science, and social-emotional development - all in ways that feel natural and fun. We blend structure with flexibility, allowing each child to move at their own pace while being supported by passionate educators who guide their growth.</p>
+            </div>
+
+            <div className="curriculum-pillar">
+              <h3>Engaging Themes</h3>
+              <p>To keep things fresh and exciting, we incorporate monthly themes that tie into our learning goals - from nature and community helpers to storytelling, seasons, and more. These themes give children a chance to dive deeper into topics they love while building vocabulary, critical thinking, and real-world connections.</p>
+            </div>
+          </div>
+
+          <div className="curriculum-goal">
+            <p>Our goal is simple: to cultivate confident, compassionate, and curious learners who are not only ready for kindergarten - but ready to thrive far beyond it.</p>
+          </div>
+        </div>
       </section>
     </div>
   );

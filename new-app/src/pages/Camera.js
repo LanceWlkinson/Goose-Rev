@@ -1,11 +1,34 @@
 import React, { useState } from 'react';
-
-const cameraLocations = [
-  { id: 'cam1', name: 'Infant Room', password: '1234', streamUrl: 'https://video.nest.com/embedded/live/1E8tHuDSaE?autoplay=1' },
-  { id: 'cam2', name: 'Woddler Room', password: '5678', streamUrl: 'https://your-camera-stream-url-2' },
-  { id: 'cam3', name: 'Toddler Room', password: '9012', streamUrl: 'https://your-camera-stream-url-3' },
-  { id: 'cam4', name: 'Preschool Room', password: '3456', streamUrl: 'https://your-camera-stream-url-4' }
-];
+const password = '1234'; // Example password for authentication
+const locationSections = {
+  mainCampus: {
+    name: 'Thayer',
+    cameras: [
+      { id: 'Tha-cam1', name: 'Infant Room', password: password, streamUrl: 'https://video.nest.com/embedded/live/1E8tHuDSaE?autoplay=1' },
+      { id: 'Tha-cam2', name: 'Woddler Room', password: password, streamUrl: 'https://your-camera-stream-url-2' },
+      { id: 'Tha-cam3', name: 'Toddler Room', password: password, streamUrl: 'https://your-camera-stream-url-3' },
+      { id: 'Tha-cam4', name: 'Preschool Room', password: password, streamUrl: 'https://your-camera-stream-url-4' }
+    ]
+  },
+  westCampus: {
+    name: 'Comstock',
+    cameras: [
+      { id: 'Com-cam1', name: 'Infant Room', password: password, streamUrl: 'https://your-camera-stream-url-5' },
+      { id: 'Com-cam2', name: 'Woddler Room', password: password, streamUrl: 'https://your-camera-stream-url-6' },
+      { id: 'Com-cam3', name: 'Toddler Room', password: password, streamUrl: 'https://your-camera-stream-url-7' },
+      { id: 'Com-cam4', name: 'Preschool Room', password: password, streamUrl: 'https://your-camera-stream-url-7' }
+    ]
+  },
+  eastCampus: {
+    name: 'Bombing Range',
+    cameras: [
+      { id: 'BR-cam1', name: 'Infant Room', password: password, streamUrl: 'https://your-camera-stream-url-8' },
+      { id: 'BR-cam2', name: 'Woddler Room', password: password, streamUrl: 'https://your-camera-stream-url-9' },
+      { id: 'BR-cam3', name: 'Toddler Room', password: password, streamUrl: 'https://your-camera-stream-url-10' },
+      { id: 'BR-cam4', name: 'Preschool Room', password: password, streamUrl: 'https://your-camera-stream-url-10' }
+    ]
+  }
+};
 
 function Camera() {
   const [selectedCamera, setSelectedCamera] = useState(null);
@@ -20,11 +43,9 @@ function Camera() {
     setError('');
   };
 
-  const handlePasswordSubmit = (e) => {
+    const handlePasswordSubmit = (e) => {
     e.preventDefault();
-    const camera = cameraLocations.find(cam => cam.id === selectedCamera.id);
-    
-    if (camera.password === password) {
+    if (selectedCamera.password === password) {
       setIsAuthenticated(true);
       setError('');
     } else {
@@ -45,22 +66,27 @@ function Camera() {
       {!selectedCamera ? (
         <>
           <section className="camera-info">
-            <h2>Security Cameras</h2>
-            <p>Select a camera location to view the live feed. Authentication required for access.</p>
+            <h2>Goose Cameras</h2>
+            <p>Select a campus and camera location to view the live feed. Authentication required for access.</p>
           </section>
           
-          <div className="camera-grid">
-            {cameraLocations.map((camera) => (
-              <button
-                key={camera.id}
-                className="camera-button"
-                onClick={() => handleCameraSelect(camera)}
-              >
-                <span className="camera-icon">📹</span>
-                {camera.name}
-              </button>
-            ))}
-          </div>
+          {Object.entries(locationSections).map(([sectionKey, section]) => (
+            <div key={sectionKey} className="camera-section">
+              <h3 className="section-title">{section.name}</h3>
+              <div className="camera-grid">
+                {section.cameras.map((camera) => (
+                  <button
+                    key={camera.id}
+                    className="camera-button"
+                    onClick={() => handleCameraSelect(camera)}
+                  >
+                    <span className="camera-icon">📹</span>
+                    <span className="camera-name">{camera.name}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
         </>
       ) : !isAuthenticated ? (
         <div className="auth-container">

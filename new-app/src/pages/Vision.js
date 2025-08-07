@@ -6,39 +6,71 @@ function Vision() {
       
       <section className="mission-statement">
         <h2>Building Tomorrow's Leaders Today</h2>
-        <p>We envision a community rooted in strong relationships, fostering growth through nurturing environments where Teachers, Parents, and Children are empowered to thrive together. Through innovative early education, we're shaping the future, one child at a time.</p>
+        <div className="mission-content">
+          <p>At Goose & Rev, we believe the future starts now. We're more than just a program - we're a community of passionate educators, engaged families, and curious children, all working together to create something extraordinary.</p>
+
+          <p>Our spaces are designed to spark imagination, build confidence, and encourage growth. Here, every child is seen, every voice is valued, and every moment is an opportunity to learn through play, connection, and discovery.</p>
+
+          <p>By investing in strong relationships, meaningful learning, and empowering experiences, we're not only preparing children for school - we're helping shape compassionate, confident, and capable future leaders.</p>
+        </div>
       </section>
 
       <section className="values">
-        <h2>Our Core Values</h2>
-        <div className="values-grid">
-          <div className="value-item">
-            <h3>
-              <span role="img" aria-label="shield">🛡️</span>
-              Safety First
-            </h3>
-            <p>Providing a secure and protected environment for every child, with state-of-the-art facilities and trained professionals.</p>
+        <h2>Core Values</h2>
+        <div className="values-acronym">
+          <div className="values-grid">
+            <div className="value-item" data-letter="G">
+              <h3>
+                Growth for All
+              </h3>
+              <p>We believe children, families, and our team should always be learning and evolving. We invest in growing little minds and big dreams.</p>
+            </div>
+            <div className="value-item" data-letter="O">
+              <h3>
+                Open & Safe Spaces
+              </h3>
+              <p>We create a secure, nurturing environment where children, families, and staff feel safe, respected, and cared for.</p>
+            </div>
+            <div className="value-item" data-letter="O">
+              <h3>
+                Opportunity for Joy
+              </h3>
+              <p>Play is powerful. We spark laughter, curiosity, and wonder in every experience — whether it's learning, playing, or celebrating.</p>
+            </div>
+            <div className="value-item" data-letter="S">
+              <h3>
+                Supportive Community
+              </h3>
+              <p>We're more than a place to drop off or play — we're a village for families and a team that lifts each other up.</p>
+            </div>
+            <div className="value-item" data-letter="E">
+              <h3>
+                Empowering Creativity
+              </h3>
+              <p>We embrace imagination in our classrooms, parties, and play spaces, inspiring children to dream, explore, and discover.</p>
+            </div>
           </div>
-          <div className="value-item">
-            <h3>
-              <span role="img" aria-label="graduation">🎓</span>
-              Quality Education
-            </h3>
-            <p>Delivering excellence in early childhood education through play-based learning and research-backed developmental programs.</p>
-          </div>
-          <div className="value-item">
-            <h3>
-              <span role="img" aria-label="growing heart">🌱</span>
-              Nurturing Growth
-            </h3>
-            <p>Supporting each child's individual development journey with personalized attention and care to help them reach their full potential.</p>
-          </div>
-          <div className="value-item">
-            <h3>
-              <span role="img" aria-label="family">👨‍👩‍👧‍👦</span>
-              Community Focus
-            </h3>
-            <p>Building strong partnerships with families and our local community to create a supportive network for children's development.</p>
+          
+          <h3>&</h3>
+          <div className="values-grid">
+            <div className="value-item" data-letter="R">
+              <h3>
+                Reliability & Trust
+              </h3>
+              <p>Life is unpredictable. We provide dependable, adaptable care and events that parents can trust and kids can thrive in.</p>
+            </div>
+            <div className="value-item" data-letter="E">
+              <h3>
+                Everyone Leaves It Better
+              </h3>
+              <p>We strive to leave every space, relationship, and moment better than we found it—both in our classrooms and our communities.</p>
+            </div>
+            <div className="value-item" data-letter="V">
+              <h3>
+                Vision & Commitment
+              </h3>
+              <p>We show up for children, families, and our team — staying loyal to our mission and committed to making a lasting impact.</p>
+            </div>
           </div>
         </div>
       </section>

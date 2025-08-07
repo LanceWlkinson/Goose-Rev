@@ -3,30 +3,34 @@ import React from 'react';
 function Locations() {
   const locations = [
     {
-      name: "Main Center",
-      address: "1215 Example Drive",
+      name: "Thayer",
+      address: "1215 Thayer Drive",
       city: "Richland, WA",
-      phone: "(509) 555-0150",
+      phone: "(509) 579-4150",
       hours: "Monday-Friday: 7:30am-5:30pm"
     },
     {
-      name: "North Center",
-      address: "833 North Avenue",
-      city: "West Example, ND",
-      phone: "(701) 555-0534",
-      hours: "Monday-Friday: 6:00am-6:00pm"
+      name: "Comstock",
+      address: "814 Comstock Street",
+      city: "Richland, WA",
+      phone: "(509) 579-4150",
+      hours: "Monday-Friday: 7:30am-5:30pm"
     },
     {
-      name: "South Center",
-      address: "205 South Street",
-      city: "Example City, MT",
-      phone: "(406) 555-6150",
-      hours: "Monday-Friday: 7:30am-5:30pm"
+      name: "Bombing Range",
+      address: "288 Bombing Range Road",
+      city: "Richland, WA",
+      phone: "(509) 579-4150",
+      hours: "Monday-Friday: 6:00am-5:30pm"
     }
   ];
 
   return (
     <div className="locations">
+      <div className="programs-intro">
+        <h1>Visit Us Today</h1>
+        <p>Every Goose & Rev location offers consistent excellence - with thoughtfully designed spaces, passionate educators, and play-based programs that inspire curiosity and growth. Our environments are built to feel like an extension of your family: safe, creative, and full of purpose. Whether you're exploring options for full-time enrichment or flexible scheduling that fits your lifestyle, our team is here to help.</p>
+      </div>
       <div className="locations-grid">
         {locations.map((location, index) => (
           <div key={index} className="location-card">
@@ -40,11 +44,12 @@ function Locations() {
           </div>
         ))}
       </div>
-
-      <section className="location-info">
-        <h2>Visit Us Today</h2>
-        <p>Each of our locations offers the same high-quality care and educational programs, featuring state-of-the-art facilities, dedicated teachers, and engaging learning environments. Contact your nearest center to schedule a tour or learn more about enrollment opportunities for your child.</p>
+      <section className="cta">
+        <h2>Ready to experience it for yourself?</h2>
+        <p>Contact your nearest Goose & Rev location to schedule a visit, meet our team, and discover what makes our approach different. Enrollment opportunities vary by location — don't wait to find the right fit for your child's next chapter.</p>
+        <button onClick={() => window.location.href='/contact'}>Contact Us</button>
       </section>
+      
     </div>
   );
 }

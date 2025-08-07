@@ -18,8 +18,30 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically handle form submission
-    alert('Thank you for your inquiry! We will contact you soon.');
+    
+    // Format the email body with all the form information
+    const emailBody = `
+New Contact Form Submission
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Child's Age: ${formData.childAge}
+
+Message:
+${formData.message}
+    `;
+
+    // Create mailto URL with the form data
+    const mailtoLink = `mailto:lancewilkinson388@yahoo.com?subject=New Contact Form Submission - ${formData.name}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoLink;
+
+    // Show success message
+    alert('Thank you for your inquiry! Your email client should open with your message. We will contact you soon.');
+
+    // Reset the form
     setFormData({
       name: '',
       email: '',
@@ -32,8 +54,14 @@ function Contact() {
   return (
     <div className="contact">
       <section className="contact-info">
-        <h2>Get in Touch</h2>
-        <p>We'd love to hear from you! Whether you're interested in enrolling your child, scheduling a tour, or simply learning more about our programs, we're here to help.</p>
+        <h2>Let's Connect</h2>
+        <div className="welcome-message">
+          <p>We're so glad you found us — and we can't wait to learn more about you and your family! Whether you're exploring enrollment, scheduling a tour, or just curious about what makes Goose & Rev different, our team is here and happy to help.</p>
+        </div>
+        <div className="contact-prompt">
+          <p>Have a question? Need guidance? Just want to say hi?</p>
+          <p>Send us a message and someone from our flock will be in touch soon.</p>
+        </div>
       </section>
 
       <div className="contact-container">
@@ -105,13 +133,13 @@ function Contact() {
         </section>
 
         <section className="contact-details">
-          <h2>Contact Information</h2>
-          
+          <h2>Need to reach us directly?</h2>
+
           <div className="contact-method">
             <span>📞</span>
             <div className="contact-method-text">
               <h3>Phone</h3>
-              <p>(555) 123-4567</p>
+              <p>(509)-579-4150</p>
             </div>
           </div>
 
@@ -119,33 +147,12 @@ function Contact() {
             <span>✉️</span>
             <div className="contact-method-text">
               <h3>Email</h3>
-              <p>info@brightfutures.com</p>
+              <p>info@gooseandrev.com</p>
             </div>
           </div>
-
-          <div className="contact-method">
-            <span>📍</span>
-            <div className="contact-method-text">
-              <h3>Location</h3>
-              <p>123 Learning Lane,<br />Sunshine City, SC 12345</p>
-            </div>
-          </div>
-
-          <div className="contact-method">
-            <span>⏰</span>
-            <div className="contact-method-text">
-              <h3>Hours</h3>
-              <p>Monday - Friday<br />7:00 AM - 6:00 PM</p>
-            </div>
-          </div>
-
-          <div className="map">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.98!3d40.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzAwLjAiTiA3M8KwNTgnNDguMCJX!5e0!3m2!1sen!2sus!4v1627309374137!5m2!1sen!2sus" 
-              allowFullScreen="" 
-              loading="lazy"
-              title="Location Map"
-            ></iframe>
+          
+          <div className="contact-message">
+            <p>Big questions, little questions, and everything in between — we're just a message away.</p>
           </div>
         </section>
       </div>

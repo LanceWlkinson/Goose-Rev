@@ -5,10 +5,11 @@ function Home() {
     <div className="home">
       <section className="hero">
         <div className="hero-content">
-          <h1>Welcome to Our Daycare Center</h1>
-          <h2>Where Learning Meets Play</h2>
-          <h2>Experienced Teachers • Play-Based Education</h2>
-          <h2>Ages 6 weeks to 6 years</h2>
+          <h1>Goose & Rev Academy</h1>
+          <h2>Where Play Fuels Purpose</h2>
+          <p className="hero-text">Nurturing curious minds from 6 weeks to 6 years</p>
+          <p className="hero-text">Led by experienced educators.</p>
+          <p className="hero-text">Rooted in connection. Powered by play.</p>
         </div>
       </section>
 
@@ -39,7 +40,7 @@ function Home() {
       <section className="cta">
         <h2>Give Your Child the Best Start</h2>
         <p>Enroll now or schedule a tour to learn more about our programs.</p>
-        <button onClick={() => window.location.href='/contact'}>Contact Us Today</button>
+        <button onClick={() => window.location.href= window.location.origin + '/Goose-Rev/contact'}>Contact Us Today</button>
       </section>
     </div>
   );

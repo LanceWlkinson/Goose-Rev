@@ -59,7 +59,7 @@ function Testimonials() {
       <section className="join-us">
         <h2>Join Our Growing Family</h2>
         <p>Experience the difference quality early childhood education can make. We invite you to visit our center, meet our dedicated staff, and see firsthand why so many families trust us with their children's early development.</p>
-        <button onClick={() => window.location.href='/contact'}>Schedule a Tour Today</button>
+        <button onClick={() => window.location.href= window.location.origin + '/Goose-Rev/contact'}>Schedule a Tour Today</button>
       </section>
     </div>
   );
