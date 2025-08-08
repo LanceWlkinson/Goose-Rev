@@ -4,28 +4,28 @@ const locationSections = {
   mainCampus: {
     name: 'Thayer',
     cameras: [
-      { id: 'Tha-cam1', name: 'Infant Room', password: password, streamUrl: 'https://video.nest.com/embedded/live/1E8tHuDSaE?autoplay=1' },
-      { id: 'Tha-cam2', name: 'Woddler Room', password: password, streamUrl: 'https://your-camera-stream-url-2' },
-      { id: 'Tha-cam3', name: 'Toddler Room', password: password, streamUrl: 'https://your-camera-stream-url-3' },
-      { id: 'Tha-cam4', name: 'Preschool Room', password: password, streamUrl: 'https://your-camera-stream-url-4' }
+      { id: 'Tha-cam1', name: 'Hatchlings', password: password, streamUrl: 'https://video.nest.com/embedded/live/d33OaolQM9?autoplay=1'},
+      { id: 'Tha-cam2', name: 'Little Waddlers', password: password, streamUrl: 'https://video.nest.com/embedded/live/jiEFMZVQL7?autoplay=1' },
+      { id: 'Tha-cam3', name: 'Busy Beaks', password: password, streamUrl: 'https://video.nest.com/embedded/live/swHAu0uPVb?autoplay=1' },
+      { id: 'Tha-cam4', name: 'Flight Crew', password: password, streamUrl: 'https://your-camera-stream-url-4' }
     ]
   },
   westCampus: {
     name: 'Comstock',
     cameras: [
-      { id: 'Com-cam1', name: 'Infant Room', password: password, streamUrl: 'https://your-camera-stream-url-5' },
-      { id: 'Com-cam2', name: 'Woddler Room', password: password, streamUrl: 'https://your-camera-stream-url-6' },
-      { id: 'Com-cam3', name: 'Toddler Room', password: password, streamUrl: 'https://your-camera-stream-url-7' },
-      { id: 'Com-cam4', name: 'Preschool Room', password: password, streamUrl: 'https://your-camera-stream-url-7' }
+      { id: 'Com-cam1', name: 'Hatchlings', password: password, streamUrl: 'https://video.nest.com/embedded/live/yexP2YyEfB?autoplay=1' },
+      { id: 'Com-cam2', name: 'Little Waddlers', password: password, streamUrl: 'https://video.nest.com/embedded/live/1E8tHuDSaE?autoplay=1' },
+      { id: 'Com-cam3', name: 'Busy Beaks', password: password, streamUrl: 'https://video.nest.com/embedded/live/Umij9QueXF?autoplay=1' },
+      { id: 'Com-cam4', name: 'Flight Crew', password: password, streamUrl: 'https://your-camera-stream-url-7' }
     ]
   },
   eastCampus: {
     name: 'Bombing Range',
     cameras: [
-      { id: 'BR-cam1', name: 'Infant Room', password: password, streamUrl: 'https://your-camera-stream-url-8' },
-      { id: 'BR-cam2', name: 'Woddler Room', password: password, streamUrl: 'https://your-camera-stream-url-9' },
-      { id: 'BR-cam3', name: 'Toddler Room', password: password, streamUrl: 'https://your-camera-stream-url-10' },
-      { id: 'BR-cam4', name: 'Preschool Room', password: password, streamUrl: 'https://your-camera-stream-url-10' }
+      { id: 'BR-cam1', name: 'Hatchlings', password: password, streamUrl: 'https://your-camera-stream-url-8' },
+      { id: 'BR-cam2', name: 'Little Waddlers', password: password, streamUrl: 'https://your-camera-stream-url-9' },
+      { id: 'BR-cam3', name: 'Busy Beaks', password: password, streamUrl: 'https://your-camera-stream-url-10' },
+      { id: 'BR-cam4', name: 'Flight Crew', password: password, streamUrl: 'https://your-camera-stream-url-10' }
     ]
   }
 };

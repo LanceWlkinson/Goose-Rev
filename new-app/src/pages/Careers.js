@@ -40,7 +40,7 @@ function Careers() {
         <div className="cta-content">
           <h2>We're always looking for great people — even when we're not hiring.</h2>
           <p>Don't see the right role listed? Tell us why we need you.</p>
-          <button onClick={() => window.location.href = 'mailto:info@gooseandrev.com?subject=Career Inquiry'}>
+          <button onClick={() => window.open('https://docs.google.com/forms/d/1AQkVrtWkWGfHQ8THIFUAfkgZqn7pLNSXMsiQsA7qvWc/viewform?edit_requested=true', '_blank')}>
             Get in Touch
           </button>
         </div>

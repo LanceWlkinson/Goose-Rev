@@ -4,13 +4,24 @@ function Programs() {
   const programs = [
     {
       title: "Infant Program",
-      age: "Ages: 6 weeks - 18 months",
+      age: "Ages: 6 weeks - 12 months",
       description: "A nurturing, responsive environment where your baby can explore, grow, and reach early milestones with personalized support.",
       features: [
         "Individualized daily routines",
         "Sensory-rich experiences",
         "Early communication and bonding",
         "Gentle motor skill development"
+      ]
+    },
+    {
+      title: "Waddler Program",
+      age: "Ages: 12 Months - 24 months",
+      description: "A specialized transition program designed to bridge the gap between infant and toddler stages, focusing on emerging independence, mobility development, and important feeding milestones.",
+      features: [
+        "Supported walking and gross motor development",
+        "Guided transition from bottles to cups",
+        "Early independence skills practice",
+        "Social interaction and parallel play"
       ]
     },
     {

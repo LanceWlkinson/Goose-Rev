@@ -57,7 +57,7 @@ function App() {
         </main>
 
         <footer>
-          <p>&copy; 2025 Daycare Center. All rights reserved.</p>
+          <p>&copy; 2025 Goose & Rev Academy. All rights reserved.</p>
         </footer>
       </div>
     </Router>
