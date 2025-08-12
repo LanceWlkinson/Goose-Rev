@@ -9,7 +9,6 @@ function Navigation({ logo }) {
 
   React.useEffect(() => {
     const handleScroll = () => {
-        console.log('Scroll event detected');
       if (window.scrollY > 100) {
         setIsNavVisible(false);
       }
