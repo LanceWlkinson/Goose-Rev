@@ -1,0 +1,15 @@
+{
+  "short_name": "Goose & Rev",
+  "name": "Goose & Rev Academy",
+  "icons": [
+    {
+      "src": "goose-rev-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#AE231B",
+  "background_color": "#ffffff"
+}
