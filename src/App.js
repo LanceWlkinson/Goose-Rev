@@ -22,7 +22,6 @@ function App() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  console.log('Change is here')
   return (
     <Router>
       <ScrollToTop />
