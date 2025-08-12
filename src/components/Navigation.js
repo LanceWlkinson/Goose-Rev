@@ -20,6 +20,13 @@ function Navigation({ logo }) {
   }, []);
 
   const menuStructure = {
+    about: {
+      label: "About Us",
+      items: [
+        { path: "Goose-Rev/about", label: "About" },
+        { path: "Goose-Rev/our-flock", label: "Our Flock" }
+      ]
+    },
     programs: {
       label: "Our Programs",
       items: [
@@ -28,20 +35,13 @@ function Navigation({ logo }) {
         { path: "Goose-Rev/programs", label: "Programs" }
       ]
     },
-    about: {
-      label: "About Us",
-      items: [
-        { path: "Goose-Rev/about", label: "About" },
-        { path: "Goose-Rev/our-flock", label: "Our Flock" }
-      ]
-    },
     parent: {
       label: "Parent Portal",
       items: [
         { path: "Goose-Rev/cameras", label: "Cameras" },
         { path: "Goose-Rev/calendar", label: "Calendar" },
         {
-            label: "Enrollment Fee",
+            label: "Application Fee",
             action: () => window.open(`https://dino-drop-in-tri-cities.myshopify.com/products/abcdino-application-fee`)
         },
         { 

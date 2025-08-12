@@ -5,7 +5,7 @@ function Calendar() {
     <div className="calendar">
       <h1>School Calendar</h1>
       <div className="calendar-intro">
-        <p>Stay informed about important dates, events, and activities at Goose & Rev Academy.</p>
+        <p>Easily view important closure dates and scheduled breaks by checking out the 2025-2026 Goose & Rev Academy Calendar.</p>
       </div>
       
       <div className="calendar-section">

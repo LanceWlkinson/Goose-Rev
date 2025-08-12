@@ -103,7 +103,7 @@ function OurFlock() {
             <p>From circle time to story time, our teachers are intentional, compassionate, and deeply committed to helping every child feel seen, celebrated, and supported. They're more than educators — they're mentors, role models, and cheerleaders for every child's journey.</p>
           </div>
           <div className="teachers-collage">
-            {/* Image collage will be added here */}
+            <img src={process.env.PUBLIC_URL + "/images/employee-collage.jpg"} alt="Our amazing teachers at Goose & Rev Academy" />
           </div>
         </div>
       </section>
