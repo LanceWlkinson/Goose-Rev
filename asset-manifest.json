@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Goose-RevAcademy/static/css/main.94ade40e.css",
-    "main.js": "/Goose-RevAcademy/static/js/main.56174ff4.js",
-    "static/js/453.f35b1f7b.chunk.js": "/Goose-RevAcademy/static/js/453.f35b1f7b.chunk.js",
+    "main.js": "/Goose-RevAcademy/static/js/main.901a8288.js",
+    "static/js/453.63f3e8d3.chunk.js": "/Goose-RevAcademy/static/js/453.63f3e8d3.chunk.js",
     "static/media/Goose & Rev Academy Logo.jpg": "/Goose-RevAcademy/static/media/Goose & Rev Academy Logo.2eafbb660a342dd1904b.jpg",
     "index.html": "/Goose-RevAcademy/index.html",
     "main.94ade40e.css.map": "/Goose-RevAcademy/static/css/main.94ade40e.css.map",
-    "main.56174ff4.js.map": "/Goose-RevAcademy/static/js/main.56174ff4.js.map",
-    "453.f35b1f7b.chunk.js.map": "/Goose-RevAcademy/static/js/453.f35b1f7b.chunk.js.map"
+    "main.901a8288.js.map": "/Goose-RevAcademy/static/js/main.901a8288.js.map",
+    "453.63f3e8d3.chunk.js.map": "/Goose-RevAcademy/static/js/453.63f3e8d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94ade40e.css",
-    "static/js/main.56174ff4.js"
+    "static/js/main.901a8288.js"
   ]
 }
