@@ -19,7 +19,7 @@ function Home() {
       <section className="features">
         <div className="feature">
           <div className="feature-icon">
-            <img src={process.env.PUBLIC_URL + "/images/GooseHeart.png"} alt="Goose heart" />
+            <img src={process.env.PUBLIC_URL + "/images/GooseHeart.PNG"} alt="Goose heart" />
           </div>
           <h3>Nurturing Environment</h3>
           <p>Creating a safe and loving space for your child to grow and learn.</p>
