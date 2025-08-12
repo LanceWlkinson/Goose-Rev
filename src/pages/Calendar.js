@@ -11,7 +11,6 @@ function Calendar() {
       <div className="calendar-section">
         <h2>2025 - 2026 Calendar</h2>
         <div className="calendar-container">
-          {/* Add your calendar integration here */}
           <div className="calendar-placeholder">
             <img 
               src={`${process.env.PUBLIC_URL}/images/Goose-rev-calendar.png`}
