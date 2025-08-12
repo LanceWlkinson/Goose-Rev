@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Goose-Rev/static/css/main.94ade40e.css",
-    "main.js": "/Goose-Rev/static/js/main.821eb61a.js",
+    "main.css": "/Goose-Rev/static/css/main.aabf25ad.css",
+    "main.js": "/Goose-Rev/static/js/main.00512942.js",
     "static/js/453.63f3e8d3.chunk.js": "/Goose-Rev/static/js/453.63f3e8d3.chunk.js",
     "static/media/Goose & Rev Academy Logo.jpg": "/Goose-Rev/static/media/Goose & Rev Academy Logo.2eafbb660a342dd1904b.jpg",
     "index.html": "/Goose-Rev/index.html",
-    "main.94ade40e.css.map": "/Goose-Rev/static/css/main.94ade40e.css.map",
-    "main.821eb61a.js.map": "/Goose-Rev/static/js/main.821eb61a.js.map",
+    "main.aabf25ad.css.map": "/Goose-Rev/static/css/main.aabf25ad.css.map",
+    "main.00512942.js.map": "/Goose-Rev/static/js/main.00512942.js.map",
     "453.63f3e8d3.chunk.js.map": "/Goose-Rev/static/js/453.63f3e8d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94ade40e.css",
-    "static/js/main.821eb61a.js"
+    "static/css/main.aabf25ad.css",
+    "static/js/main.00512942.js"
   ]
 }
