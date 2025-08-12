@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Locations() {
+  const navigate = useNavigate();
+  
   const locations = [
     {
       name: "Thayer",
@@ -52,7 +55,7 @@ function Locations() {
       <section className="cta">
         <h2>Ready to experience it for yourself?</h2>
         <p>Contact your nearest Goose & Rev location to schedule a visit, meet our team, and discover what makes our approach different. Enrollment opportunities vary by location — don't wait to find the right fit for your child's next chapter.</p>
-        <button onClick={() => window.location.href='/contact'}>Contact Us</button>
+        <button onClick={() => navigate('/contact')}>Contact Us</button>
       </section>
       
     </div>

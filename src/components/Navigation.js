@@ -23,23 +23,23 @@ function Navigation({ logo }) {
     about: {
       label: "About Us",
       items: [
-        { path: "Goose-Rev/about", label: "About" },
-        { path: "Goose-Rev/our-flock", label: "Our Flock" }
+        { path: "/about", label: "About" },
+        { path: "/our-flock", label: "Our Flock" }
       ]
     },
     programs: {
       label: "Our Programs",
       items: [
-        { path: "Goose-Rev/vision", label: "Vision" },
-        { path: "Goose-Rev/locations", label: "Locations" },
-        { path: "Goose-Rev/programs", label: "Programs" }
+        { path: "/vision", label: "Vision" },
+        { path: "/locations", label: "Locations" },
+        { path: "/programs", label: "Programs" }
       ]
     },
     parent: {
       label: "Parent Portal",
       items: [
-        { path: "Goose-Rev/cameras", label: "Cameras" },
-        { path: "Goose-Rev/calendar", label: "Calendar" },
+        { path: "/cameras", label: "Cameras" },
+        { path: "/calendar", label: "Calendar" },
         {
             label: "Application Fee",
             action: () => window.open(`https://dino-drop-in-tri-cities.myshopify.com/products/abcdino-application-fee`)
@@ -53,8 +53,8 @@ function Navigation({ logo }) {
     connect: {
       label: "Connect",
       items: [
-        { path: "Goose-Rev/careers", label: "Careers" },
-        { path: "Goose-Rev/contact", label: "Contact Us" }
+        { path: "/careers", label: "Careers" },
+        { path: "/contact", label: "Contact Us" }
       ]
     }
   };
@@ -102,7 +102,7 @@ function Navigation({ logo }) {
       </button>
       <nav className={`nav-container ${isNavVisible ? 'visible' : 'hidden'}`}>
         <div className="nav-logo">
-          <NavLink to="Goose-Rev/" end>
+          <NavLink to="/" end>
             <img src={logo} alt="Goose & Rev Academy Logo" />
           </NavLink>
         </div>
@@ -130,7 +130,7 @@ function Navigation({ logo }) {
                       {item.path ? (
                         <NavLink 
                           to={item.path}
-                          end={item.path === "Goose-Rev/"}
+                          end={item.path === "/"}
                           onClick={() => handleClick(item)}
                         >
                           {item.label}

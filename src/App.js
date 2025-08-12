@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import logo from './Goose & Rev Academy Logo.jpg';
 import Navigation from './components/Navigation';
@@ -33,20 +33,20 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="Goose-Rev/" element={<Home />} />
-            <Route path="Goose-Rev/vision" element={<Vision />} />
-            <Route path="Goose-Rev/locations" element={<Locations />} />
-            <Route path="Goose-Rev/programs" element={<Programs />} />
-            <Route path="Goose-Rev/about" element={<About />} />
-            <Route path="Goose-Rev/our-flock" element={<OurFlock />} />
-            <Route path="Goose-Rev/cameras" element={<Cameras />} />
-            <Route path="Goose-Rev/careers" element={<Careers />} />
-            <Route path="Goose-Rev/contact" element={<Contact />} />
-            <Route path="Goose-Rev/calendar" element={<Calendar />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/vision" element={<Vision />} />
+            <Route path="/locations" element={<Locations />} />
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/our-flock" element={<OurFlock />} />
+            <Route path="/cameras" element={<Cameras />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/calendar" element={<Calendar />} />
           </Routes>
         </main>
         <div className='footer-logo'>
-            <a href="Goose-Rev/" className="footer-logo">
+            <a href="#/" className="footer-logo">
               <img src={logo} alt="Goose & Rev Academy Logo" />
             </a>
         </div>

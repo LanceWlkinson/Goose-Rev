@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="home">
       <section className="hero">
@@ -16,21 +19,21 @@ function Home() {
       <section className="features">
         <div className="feature">
           <div className="feature-icon">
-            <span role="img" aria-label="heart">❤️</span>
+            <img src={process.env.PUBLIC_URL + "/images/GooseHeart.png"} alt="Goose heart" />
           </div>
           <h3>Nurturing Environment</h3>
           <p>Creating a safe and loving space for your child to grow and learn.</p>
         </div>
         <div className="feature">
           <div className="feature-icon">
-            <span role="img" aria-label="teacher">👩‍🏫</span>
+            <img src={process.env.PUBLIC_URL + "/images/GooseGrad.PNG"} alt="Goose graduation" />
           </div>
           <h3>Expert Teachers</h3>
           <p>Dedicated professionals committed to early childhood development.</p>
         </div>
         <div className="feature">
           <div className="feature-icon">
-            <span role="img" aria-label="blocks">🎯</span>
+            <img src={process.env.PUBLIC_URL + "/images/GooseBlocks.PNG"} alt="Goose blocks" />
           </div>
           <h3>Play-Based Learning</h3>
           <p>Educational activities that make learning fun and engaging.</p>
@@ -46,7 +49,7 @@ function Home() {
         <div className="cta-content">
           <h2>Give Your Child the Best Start</h2>
           <p>Enroll now or schedule a tour to learn more about our programs.</p>
-          <button onClick={() => window.location.href= window.location.origin + '/Goose-Rev/contact'}>Contact Us Today</button>
+          <button onClick={() => navigate('/contact')}>Contact Us Today</button>
         </div>
       </section>
     </div>

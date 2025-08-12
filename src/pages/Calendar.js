@@ -3,13 +3,13 @@ import React from 'react';
 function Calendar() {
   return (
     <div className="calendar">
-      <h1>School Calendar</h1>
+      <h1>Calendar</h1>
       <div className="calendar-intro">
         <p>Easily view important closure dates and scheduled breaks by checking out the 2025-2026 Goose & Rev Academy Calendar.</p>
       </div>
       
       <div className="calendar-section">
-        <h2>Academic Calendar</h2>
+        <h2>2025 - 2026 Calendar</h2>
         <div className="calendar-container">
           {/* Add your calendar integration here */}
           <div className="calendar-placeholder">

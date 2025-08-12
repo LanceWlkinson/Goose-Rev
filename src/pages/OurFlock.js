@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 const directors = [
   {
     id: 1,
@@ -63,6 +64,8 @@ const EducatorCard = ({ educator }) => (
 );
 
 function OurFlock() {
+  const navigate = useNavigate();
+
   return (
     <div className="our-flock">
       <section className="flock-hero">
@@ -112,7 +115,7 @@ function OurFlock() {
         <div className="join-content">
           <h2>Want to Join Our Flock?</h2>
           <p>We're always looking for passionate educators who believe in the power of play-based learning and want to make a difference in children's lives.</p>
-          <button onClick={() =>  window.location.href= window.location.origin + '/Goose-Rev/careers'} className="cta-button">
+          <button onClick={() => navigate('/careers')} className="cta-button">
             View Careers Page
           </button>
         </div>
