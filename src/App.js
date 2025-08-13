@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import logo from './Goose & Rev Academy Logo.jpg';
 import Navigation from './components/Navigation';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -19,6 +18,8 @@ import OurFlock from './pages/OurFlock';
 import Calendar from './pages/Calendar';
 
 function App() {
+  const logo = process.env.PUBLIC_URL + "/goose-rev-logo.jpg";
+  
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
