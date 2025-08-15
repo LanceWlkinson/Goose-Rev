@@ -23,15 +23,16 @@ function Navigation({ logo }) {
       label: "About Us",
       items: [
         { path: "/about", label: "About" },
-        { path: "/our-flock", label: "Our Flock" }
+        { path: "/our-flock", label: "Our Flock" },
+        { path: "/vision", label: "Vision" },
+        { path: "/locations", label: "Locations" },
       ]
     },
     programs: {
       label: "Our Programs",
       items: [
-        { path: "/vision", label: "Vision" },
-        { path: "/locations", label: "Locations" },
-        { path: "/programs", label: "Programs" }
+        { path: "/full-time", label: "Full Time" },
+        { path: "/part-time", label: "Part Time" }
       ]
     },
     parent: {

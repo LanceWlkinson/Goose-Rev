@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Vision from './pages/Vision';
 import Locations from './pages/Locations';
 import Programs from './pages/Programs';
+import PartTimePreschool from './pages/PartTimePreschool';
 import Testimonials from './pages/Testimonials';
 import About from './pages/About';
 import Cameras from './pages/Camera';
@@ -36,7 +37,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/vision" element={<Vision />} />
             <Route path="/locations" element={<Locations />} />
-            <Route path="/programs" element={<Programs />} />
+            <Route path="/full-time" element={<Programs />} />
+            <Route path="/part-time" element={<PartTimePreschool />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-flock" element={<OurFlock />} />
             <Route path="/cameras" element={<Cameras />} />

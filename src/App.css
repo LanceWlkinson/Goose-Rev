@@ -2274,15 +2274,15 @@ button:hover {
   margin: 0 auto;
 }
 
-.cta-content h2 {
-  color: white;
+.careers-cta .cta-content h2 {
+  color: white !important;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-.cta-content p {
+.careers-cta .cta-content p {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9) !important;
   margin-bottom: 2rem;
 }
 
@@ -3349,5 +3349,429 @@ footer {
 
   h2 {
     font-size: 1.5rem;
+  }
+}
+
+/* Part-Time Preschool Page Styles */
+.part-time-preschool {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.program-overview {
+  margin: 4rem 0;
+}
+
+.overview-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overview-content p {
+  font-size: 1.3rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.program-details {
+  margin: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  padding: 4rem 2rem;
+  border-radius: 20px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.detail-card {
+  background-image: 
+    linear-gradient(45deg, rgba(174, 35, 27, 0.08) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(174, 35, 27, 0.08) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(174, 35, 27, 0.08) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(174, 35, 27, 0.08) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+}
+
+.detail-card h3 {
+  color: #AE231B;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.detail-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-card li {
+  color: #555;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.detail-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #AE231B;
+  font-weight: bold;
+}
+
+.curriculum-highlights {
+  margin: 4rem 0;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.highlight-item {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-top: 4px solid #AE231B;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-item h3 {
+  color: #AE231B;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.enrollment-info {
+  margin: 4rem 0;
+  background: linear-gradient(135deg, #AE231B, #CE261D);
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+}
+
+.enrollment-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.enrollment-details h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.enrollment-details p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 1.5rem;
+}
+
+.enrollment-details ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.enrollment-details li {
+  padding: 0.5rem 0;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.9);
+}
+
+.enrollment-details li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.cta-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: #AE231B;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #AE231B;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button.primary {
+  background: #AE231B;
+  color: white;
+}
+
+.cta-button.primary:hover {
+  background: transparent;
+  color: #AE231B;
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: #AE231B;
+}
+
+.cta-button.secondary:hover {
+  background: #AE231B;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .part-time-preschool {
+    padding: 1rem;
+  }
+
+  .program-details {
+    padding: 2rem 1rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .enrollment-info {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Part-Time Preschool Specific Styles */
+.preschool-programs-grid {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.preschool-program-card {
+  background-image: 
+    linear-gradient(45deg, rgba(174, 35, 27, 0.08) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(174, 35, 27, 0.08) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(174, 35, 27, 0.08) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(174, 35, 27, 0.08) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+}
+
+.preschool-program-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #AE231B, #CE261D);
+}
+
+.preschool-program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.preschool-program-card h2 {
+  color: #AE231B;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.preschool-program-card h3 {
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(74, 144, 226, 0.1);
+}
+
+.preschool-program-card p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.preschool-program-card ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.preschool-program-card li {
+  color: #555;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.preschool-program-card li::before {
+  content: '✦';
+  color: #AE231B;
+  font-size: 1.2rem;
+}
+
+/* Apply Button Styles */
+.apply-button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.apply-button {
+  background: white;
+  color: #AE231B;
+  border: 2px solid #AE231B;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(174, 35, 27, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.apply-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.apply-button:hover {
+  transform: translateY(-3px);
+  border: 2px solid white;
+  color: white;
+  box-shadow: 0 8px 25px rgba(174, 35, 27, 0.4);
+}
+
+.apply-button:hover::before {
+  left: 100%;
+}
+
+.apply-button:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .preschool-programs-grid {
+    padding: 0 1rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .preschool-program-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .preschool-program-card h2 {
+    font-size: 1.4rem;
+    white-space: normal;
+  }
+
+  .apply-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
   }
 }
